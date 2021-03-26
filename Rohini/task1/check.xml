@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Audit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+   <auditSubscribers>
+      <MSISDN>11234567890</MSISDN>
+      <OperationType>DELETE</OperationType>
+      <ServiceIndication>VM_SUBPROFILE</ServiceIndication>
+   </auditSubscribers>
+</Audit>

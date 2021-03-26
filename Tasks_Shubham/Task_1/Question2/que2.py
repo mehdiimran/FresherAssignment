@@ -23,5 +23,3 @@ with open('sample_data.csv', 'r') as read_obj:
 			print(row[0] + ' '+ row[1] + ' ' + row[2] + ' '+ row[3] + ' '+ row[4])
 		
 	
-
-
