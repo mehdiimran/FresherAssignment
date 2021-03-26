@@ -3,7 +3,8 @@ from xml.dom import minidom
 import logging
 import csv
 
-logging.basicConfig(filename="unique_record.log", level=logging.DEBUG)
+log_format = '%(asctime)s : %(message)s'
+logging.basicConfig(filename="xml_log.log", level=logging.DEBUG, format=log_format)
 
 mav_list = []
 list_subs = []
@@ -16,6 +17,7 @@ with open('sample_input.csv', 'rb') as f:
 
 def uniqueSubscriber():
     for i in mav_list:
+        mob_no = i[0]
         flag = 1
         for j in list_subs:
             flag = 1

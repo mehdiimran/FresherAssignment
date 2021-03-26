@@ -3,7 +3,8 @@ from xml.dom import minidom
 import logging
 import csv
 
-logging.basicConfig(filename="unique_record.log", level=logging.DEBUG)
+log_format = '%(asctime)s : %(message)s'
+logging.basicConfig(filename="unique_record.log", level=logging.DEBUG, format=log_format)
 
 mav_list = []
 list_subs = []
