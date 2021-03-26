@@ -48,7 +48,7 @@ def singleAuditSub():
     service_indication.appendChild(root.createTextNode(str(list_subs[0][2])))
     audit_subsciber.appendChild(service_indication)
 
-    xml_str = root.toprettyxml(indent="\t")
+    xml_str = root.toprettyxml(indent="\t", encoding='utf-8')
 
     save_path_file = "audit_subscriber.xml"
 
@@ -82,7 +82,7 @@ def multipleAuditSubs():
         service_indication.appendChild(root.createTextNode(str(i[2])))
         audit_subsciber.appendChild(service_indication)
 
-    xml_str = root.toprettyxml(indent="\t")
+    xml_str = root.toprettyxml(indent="\t", encoding='utf-8')
 
     save_path_file = "audit_subscribers.xml"
 
