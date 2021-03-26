@@ -1,15 +1,18 @@
-import pandas as pd
 import os
 from xml.dom import minidom
 import logging
+import csv
 
-logging.basicConfig(filename="xml_log.log", level=logging.DEBUG)
-data_file = pd.read_csv("sample_input.csv", usecols=[0, 1, 2])
+logging.basicConfig(filename="unique_record.log", level=logging.DEBUG)
 
-result = pd.read_csv('sample_input.csv')
-mav_list = [list(i) for i in result.values]
-
+mav_list = []
 list_subs = []
+
+with open('sample_input.csv', 'rb') as f:
+    reader = csv.reader(f)
+    for rows in reader:
+        mav_list.append(rows)
+
 
 def uniqueSubscriber():
     for i in mav_list:
