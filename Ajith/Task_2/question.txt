@@ -1,0 +1,9 @@
+Task 2.A
+
+	Create a Golang webserver
+	Add a database to the webserver
+
+Task 2.B
+
+	Implement GET api on the server
+	Fetch data with GET from the server

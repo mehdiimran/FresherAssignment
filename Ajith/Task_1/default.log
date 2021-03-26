@@ -1,0 +1,16 @@
+26-03-2021 09:11:10 PM - main.py:13 - INFO - script started and logging enabled
+26-03-2021 09:11:10 PM - main.py:15 - INFO - reading config file to get config settings and file names
+26-03-2021 09:11:10 PM - main.py:29 - INFO - started reading sample_input.csv
+26-03-2021 09:11:10 PM - main.py:33 - INFO - closed sample_input.csv
+26-03-2021 09:11:10 PM - main.py:34 - DEBUG - data_dict = {'11234567890': [('DELETE', 'VM_SUBPROFILE'), ('DELETE', 'SMS_SUBPROFILE')], '11234567893': [('ADD', 'VM_SUBPROFILE'), ('ADD', 'SMS_SUBPROFILE')], '11234567894': [('DELETE', 'VM_SUBPROFILE'), ('ADD', 'VM_SUBPROFILE'), ('DELETE', 'SMS_SUBPROFILE')], '11234567895': [('ADD', 'VM_SUBPROFILE')], '11234567897': [('DELETE', 'VM_SUBPROFILE')]}
+26-03-2021 09:11:10 PM - main.py:40 - DEBUG - service_indication = VM_SUBPROFILE
+26-03-2021 09:11:10 PM - main.py:43 - INFO - started filtering data as per given config settings
+26-03-2021 09:11:10 PM - main.py:48 - INFO - filtering completed
+26-03-2021 09:11:10 PM - main.py:49 - DEBUG - filtered_data = [('11234567890', 'DELETE', 'VM_SUBPROFILE'), ('11234567893', 'ADD', 'VM_SUBPROFILE'), ('11234567894', 'DELETE', 'VM_SUBPROFILE'), ('11234567894', 'ADD', 'VM_SUBPROFILE'), ('11234567895', 'ADD', 'VM_SUBPROFILE'), ('11234567897', 'DELETE', 'VM_SUBPROFILE')]
+26-03-2021 09:11:10 PM - main.py:55 - DEBUG - batch_size = 2
+26-03-2021 09:11:10 PM - main.py:59 - INFO - started building xml
+26-03-2021 09:11:10 PM - main.py:70 - DEBUG - reached max(2) records while building xml
+26-03-2021 09:11:10 PM - main.py:79 - INFO - completed building xml
+26-03-2021 09:11:10 PM - main.py:87 - INFO - started writing xml to output.xml
+26-03-2021 09:11:10 PM - main.py:89 - INFO - completed writing xml to output.xml
+26-03-2021 09:11:10 PM - main.py:91 - INFO - script execution completed. exiting
