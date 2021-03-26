@@ -1,0 +1,39 @@
+Task 3.A
+
+Extract the SubscriberDetails data from the tags in the xml file by creating a xml parser in C++.
+
+Example:
+<soapenv:Envelope xmlns:shar="http://www.mavenir.com/sps/services/shareddatatypes" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sub="http://www.mavenir.com/sps/services/subscriber">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <sub:ModifySubscriber>
+      <UserInfo>
+        <shar:UserId>spsuser</shar:UserId>
+        <shar:Password>spsuser</shar:Password>
+      </UserInfo>
+      <SubscriberDetails>
+        <MSISDN>19114567890</MSISDN>
+        <SubscriberData>
+          <IMSI>123419663161101</IMSI>
+          <SubStatus>ACT</SubStatus>
+          <Language>En</Language>
+          <SubType>PREPAID</SubType>
+          <OperatorId>TMO</OperatorId>
+          <isPh2User>false</isPh2User>
+        </SubscriberData>
+        <SubscriberAUTHData>
+          <HA1>78232790</HA1>
+          <AuthContext>ACT</AuthContext>
+          <UserName>ACT</UserName>
+          <Password>ACT</Password>
+        </SubscriberAUTHData>
+      </SubscriberDetails>
+      <SourceSystem>WSG</SourceSystem>
+    </sub:ModifySubscriber>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+
+Task 3.B
+
+create a shape class and inherit different shapes from it like shape-> triangle , -> rectangle , circle , shape-> rectangle->square. and implement a display area function for the provided co ordinates of each shape. 
